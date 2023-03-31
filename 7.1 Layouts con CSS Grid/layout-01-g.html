@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Layout 01 - CSS Grid</title>
+    <script
+      type="text/javascript"
+      src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=4ZiL55cEoPVS2BAUG-179CwZ0nIAaEkea3rM52lvuBZUSjIdAP4FaDB0J7Mi4MHRxBcavolcQxXU6X352UvW7Jgl0BthD_YaN3WrKnzTJHeORCuCUyFZGFaJFqE7cCLxCk-1YxevWoCqQpYbWf6aVUcT2wbQWZQjjnHETipWku2J2aBX300IDVyoXXTe7dPu"
+      charset="UTF-8"
+    ></script>
+    <link
+      rel="stylesheet"
+      crossorigin="anonymous"
+      href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9lZHVjYWNpb25jb250aW51YS1vdGVjLmFpZXAuY2wvcGx1Z2luZmlsZS5waHAvOTIyNTQ0L21vZF9hc3NpZ24vaW50cm9hdHRhY2htZW50LzAvbGF5b3V0LVhYLWcuaHRtbD9mb3JjZWRvd25sb2FkPTE"
+    />
+    <style>
+      header,
+      nav,
+      article,
+      aside,
+      footer {
+        background-color: yellow;
+        padding: 15px;
+      }
+      body {
+        margin: 10;
+        padding: 0;
+        font-family: "Lucida Sans", sans-serif;
+        font-weight: bold;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 130px);
+        grid-template-areas:
+          "he he he he he"
+          "na ar ar ar as"
+          "na ar ar ar as"
+          "na ar ar ar as"
+          "na fo fo fo fo";
+        gap: 10px;
+      }
+      header {grid-area: he; background: rgb(74, 13, 73);}
+nav {grid-area: na; background: rgb(22, 109, 22);}
+article {grid-area: ar;  background: rgb(21, 94, 129);}
+aside {grid-area: as;  background: rgb(185, 84, 8);}
+footer {grid-area: fo;  background: rgb(242, 48, 242);}
+    </style>
+
+  </head>
+  <body>
+    <header>Header</header>
+    <nav>Nav</nav>
+    <article>Article</article>
+    <aside>Aside</aside>
+    <footer>Footer</footer>
+  </body>
+</html>
